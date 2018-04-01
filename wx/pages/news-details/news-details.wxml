@@ -1,0 +1,19 @@
+<view class="news-detail-container">
+  <image class="head-img" src="{{ newsDetails.sub }}"></image>
+  <view class="author-time">
+    <image class="author-avatar" src="{{ newsDetails.icon }}"></image>
+    <text class="author-name">{{ newsDetails.authorName }}</text>
+    <text class="const-text">发表于</text>
+    <text class="time">{{ newsDetails.date }}</text>
+  </view>
+  <text class="title">{{ newsDetails.title }}</text>
+  <view class="tool">
+    <view class="circle-img">
+      <image src="../../images/sch.png" wx:if="{{ newCollected }}" bindtap="collectEvent" ></image>
+      <image src="../../images/sc.png" wx:else bindtap="collectEvent"></image> 
+      <image class="share-img" src="../../images/fx.png"></image>
+    </view>
+    <view class="horizon"></view>
+    <text class="detail">{{ newsDetails.details }}</text>
+  </view>
+</view>

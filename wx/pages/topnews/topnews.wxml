@@ -1,0 +1,5 @@
+<import src="./topnews-template/topnews-template.wxml" />
+
+<block wx:for="{{ topNewsData }}" wx:for-item="item" wx:for-index="index" wx:key="index">
+  <template is="newsTemplate" data="{{ ...item }}" />
+</block>

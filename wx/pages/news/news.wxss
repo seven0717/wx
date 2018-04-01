@@ -1,0 +1,6 @@
+@import "./news-template/news-template";
+
+.swiperimg{
+  width: 100%;
+}
+

@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/news/news",
+    "pages/news-details/news-details",
+    "pages/topnews/topnews",
+    "pages/movie/movie",
+    "pages/movie/movie-more/movie-more",
+    "pages/movie/movie-details/movie-details"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#109D59",
+    "navigationBarTitleText": "蓝莓派",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#222",
+    "backgroundColor": "#fff",
+    "selectedColor": "#109D59",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/news/news",
+        "text": "新闻",
+        "iconPath": "images/n_t1.png",
+        "selectedIconPath": "images/s_t1.png"
+      },
+      {
+        "pagePath": "pages/topnews/topnews",
+        "text": "头条",
+        "iconPath": "images/n_t2.png",
+        "selectedIconPath": "images/s_t2.png"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "电影",
+        "iconPath": "images/n_d1.png",
+        "selectedIconPath": "images/s_d1.png"
+      }
+    ]
+  }
+}

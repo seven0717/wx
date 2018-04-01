@@ -1,0 +1,11 @@
+<!--
+  1.movie
+    2.movie-list
+      3.movie-template
+        4.star-template
+  -->
+
+  <import src="./movie-list-template/movie-list-template.wxml" />
+  <template is="movieListTemplate" data="{{ ...inTheaters }}" />
+  <template is="movieListTemplate" data="{{ ...comingSoon }}" />
+  <template is="movieListTemplate" data="{{ ...top250 }}" />

@@ -1,0 +1,18 @@
+<template name="starTemplate">
+  <view class="stars-container">
+    <view class="stars">
+       <!-- <image src="../../../images/star.png"></image>
+       <image src="../../../images/star.png"></image>
+       <image src="../../../images/star.png"></image>
+       <image src="../../../images/star.png"></image>
+       <image src="../../../images/star.png"></image> -->
+       {{ movie }}
+       <block wx:for="{{ star }}">
+       <!-- [1,1,0,0,0]  -->
+          <image src="../../../images/star.png" wx:if="{{ item }}"></image>
+          <image src="../../../images/chat.png" wx:else></image>
+       </block>
+    </view>
+    <view class="star-score">{{ average }}</view>
+  </view>
+</template>

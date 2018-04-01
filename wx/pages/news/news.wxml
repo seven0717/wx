@@ -1,0 +1,17 @@
+<import src="./news-template/news-template.wxml" />
+
+<swiper indicator-dots="{{ swiper.indicatorDots }}" indicator-color="{{ swiper.indicatorColor }}" autoplay='{{ swiper.autoplay }}'>
+  <block wx:for="{{ swiperImg }}" wx:for-item="each" wx:for-index="idx" wx:key="index">
+    <swiper-item >
+      <image class="swiperimg" src='{{ each }}'></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="list">
+  <block wx:for="{{ newsData }}" wx:for-index="index" wx:for-item="item" wx:key="index">
+    <view bindtap="detailsTap" data-customid="{{ item.id }}">
+      <template is="newsTemplate" data="{{ ...item }}" />
+    </view>
+  </block>
+</view>

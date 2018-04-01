@@ -1,0 +1,7 @@
+<view class="index-container">
+  <image class='logo' src='../../images/logo.png'></image>
+  <text class="username">Hello,iwen</text>
+  <view class="btn" bindtap='Eventtap'>
+     <text>开启小程序之旅</text>
+  </view>
+</view>
